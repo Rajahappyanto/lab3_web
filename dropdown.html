@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dropdown Form</title>
+    <style type="text/css">
+        .btn-groub label{
+            background-color: #04AA6D;
+            color: white;
+            border: 1px solid green; 
+            padding: 10px 24px; 
+            cursor: pointer; 
+            float: left;
+        }
+        .btn-groub label:not(:last-child) {
+            border-right: none;
+
+        }
+        .btn-groub:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .btn-groub label:hover {
+            background-color: #3e8e41
+        }
+ 
+    </style>
+</head>
+<body>
+    <h2>Contoh form DropDown</h2>
+    <div class="btn-groub" style="width: 100%S">
+
+        <form action="submit_action.php" method="post">
+            <label for="dropdown" style="width: 5.3%">Agama</label>
+            <select id="dropdown" name="selected_option">
+                <option value="option1">Islam</option>
+                <option value="option2">Kristen</option>
+                <option value="option3">Hindu</option>
+                <option value="option4">Budha</option>
+                <option value="option4">Katholik</option>
+            </select>
+
+            <br>
+            <br>
+
+            <input type="submit" value="Submit">
+
+            <br>
+            
+
+        </form>
+
+            <form class="kel" action="submit_action.php" method="post">
+            <label for="dropdown" style="width: 5.3%">Gender</label>
+            <select id="dropdown" name="selected_option">
+                <option value="option1">Male</option>
+                <option value="option2">Female</option>
+
+            </select>
+    
+            <br>
+            <br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
